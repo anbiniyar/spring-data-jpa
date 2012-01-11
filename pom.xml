@@ -56,7 +56,7 @@
 		<spring.version.40>4.0.0.RELEASE</spring.version.40>
 		<spring.version.range>[${spring.version.30}, ${spring.version.40})</spring.version.range>
 		<spring.data.commons.version>1.2.0.BUILD-SNAPSHOT</spring.data.commons.version>
-		<hibernate.version>3.6.9.Final</hibernate.version>
+		<hibernate.version>4.0.0.Final</hibernate.version>
 		<openjpa.version>2.1.1</openjpa.version>
 		<eclipselink.version>2.3.2</eclipselink.version>
 		<aspectj.version>1.6.12</aspectj.version>
@@ -291,6 +291,13 @@
 			</exclusions>
 		</dependency>
 		
+		<dependency>
+			<groupId>cglib</groupId>
+			<artifactId>cglib-nodep</artifactId>
+			<version>2.2</version>
+			<scope>test</scope>
+		</dependency>
+		
 		<!-- Logging (SLF4J + JCL bridge) -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -354,7 +361,7 @@
 		<dependency>
 			<groupId>org.hsqldb</groupId>
 			<artifactId>hsqldb</artifactId>
-			<version>1.8.0.10</version>
+			<version>2.2.6</version>
 			<scope>test</scope>
 		</dependency>
 		
